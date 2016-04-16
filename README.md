@@ -3,7 +3,7 @@
 ## 概述
 JavaScript几个格式化字符输出函数，陆续更新更多实用函数
 
-### Js版本
+## Js版本
 
 ### 调用
 引入dist文件夹的js-format-conversion.js
