@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+</head>
+<body>
+    <div>
+        <h3>时间戳转时间差显示格式：</h3>
+        <p id="dateDiff"></p>
+    </div>
+    <div>
+        <h3>new Date()转格式化日期：</h3>
+        <p id="formatDate"></p>
+    </div>
+    <div>
+        <h3>数字、浮点数字四舍五入为2位小数（价钱）：</h3>
+        <p id="formatPrice"></p>
+    </div>
+    <div>
+        <h3>匿名姓名输出：</h3>
+        <p id="anonymousName"></p>
+    </div>
+    <script type="text/javascript" src="../dist/js-format-conversion.js"></script>
+    <script type="text/javascript">
+        document.getElementById('dateDiff').innerHTML = kb.dateDiff(1280977330000);
+        document.getElementById('formatDate').innerHTML = kb.formatDate(new Date());
+        document.getElementById('formatPrice').innerHTML = kb.formatPrice(3999.99999999993432532);
+        document.getElementById('anonymousName').innerHTML = kb.anonymousName('何先生');
+    </script>
+</body>
+</html>
