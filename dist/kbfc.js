@@ -19,10 +19,11 @@ exports.dateDiff = function(publishTime) {
     }
 };
 exports.formatDate = function (date) {
-    var y = date.getFullYear();
-    var m = date.getMonth() + 1;
+    var nd = new Date(date);
+    var y = nd.getFullYear();
+    var m = nd.getMonth() + 1;
     m = m < 10 ? '0' + m : m;
-    var d = date.getDate();
+    var d = nd.getDate();
     d = d < 10 ? ('0' + d) : d;
     return y + '年' + m + '月' + d + '日';
 };
