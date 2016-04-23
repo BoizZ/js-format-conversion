@@ -24,6 +24,9 @@ kb.formatPrice(Float);
 
 //匿名姓名输出：
 kb.anonymousName('String');
+
+//匿名电话输出：
+kb.anonymousPhone('String');
 ```
 
 ## Node版本
@@ -47,4 +50,7 @@ kbfc.formatPrice(Float);
 
 //匿名姓名输出：
 kbfc.anonymousName('String');
+
+//匿名电话输出：
+kbfc.anonymousPhone('String');
 ```

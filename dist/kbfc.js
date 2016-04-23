@@ -41,4 +41,8 @@ exports.anonymousName = function(name) {
     }
     anm = anm+star;
     return anm;
-}
+};
+exports.anonymousPhone = function (phone) {
+    var head = phone.substring(0, 3), foot = phone.substring(7, 11);
+    return head + '****' + foot;
+};

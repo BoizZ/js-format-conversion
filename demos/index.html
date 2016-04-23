@@ -21,12 +21,17 @@
         <h3>匿名姓名输出：</h3>
         <p id="anonymousName"></p>
     </div>
+    <div>
+        <h3>匿名电话输出：</h3>
+        <p id="anonymousPhone"></p>
+    </div>
     <script type="text/javascript" src="../dist/js-format-conversion.js"></script>
     <script type="text/javascript">
         document.getElementById('dateDiff').innerHTML = kb.dateDiff(1280977330000);
         document.getElementById('formatDate').innerHTML = kb.formatDate(new Date());
         document.getElementById('formatPrice').innerHTML = kb.formatPrice(3999.99999999993432532);
         document.getElementById('anonymousName').innerHTML = kb.anonymousName('何先生');
+        document.getElementById('anonymousPhone').innerHTML = kb.anonymousPhone('13888888888');
     </script>
 </body>
 </html>
