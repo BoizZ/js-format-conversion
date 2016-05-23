@@ -1,6 +1,6 @@
 var kb = window.NameSpace || {};
 kb.dateDiff = function(publishTime) {
-    var timestamp = publishTime / 1000;
+    var timestamp = new Date(publishTime) / 1000;
     var d_minutes, d_hours, d_days;
     var timeNow = parseInt(new Date().getTime() / 1000);
     var d;
